@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIOS RESUELTOS DE BUCLES FOR,WHILE Y DO-WHILE</title>
+
+    <style>
+        h1 {
+        color: #e63d3d; 
+        }
+        h2 {
+        color:rgb(255, 123, 0) ;
+        }
+        h3 {
+        color: #0b0bf4; 
+        }
+        body{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: 150px;
+    margin-left: 50px;
+    background-color: rgb(243, 255, 7)
+}
+    </style>
+</head>
+<body>
+ <br>
+ <h2><u>A.EJERCICIOS DEL BUCLE FOR</u></h2>
+ <h3 style = "color : rgb(3, 35, 48) ">1. Dime cuantos números hay del numero 0 hasta el numero 5 : </h3> 
+
+ <h4 style = "color : rgb(101, 167, 3)">La cantidad de numeros es : <h4 style = "color: rgb(3, 41, 56)">{{multiplicacion}}</h4></h4>
+ <hr>
+ <br>
+ <h3 style = "color: rgb(3, 35, 48)">2. Muestrame los multiplos de 3 que sea menor a 20</h3>
+
+ <h4 style = "color : rgb(101, 167, 3)">Respuesta: : </h4>
+ <article>
+ {% for i in numeros %}
+ <div class="row">
+ <li>{{ i }}</li> <br>
+ </div>
+ {% endfor %}
+       
+ <hr>
+ <br>
+ <br>
+ <h3 style = "color: rgb(3, 35, 48)">3. La suma de los 5 primeros numeros enteros positivos</h3>
+
+ <h4 style = "color : rgb(101, 167, 3)">La suma de estos numeros es : <h4 style = "color: rgb(3, 35, 48)"> {{suma}}</h4></h4>
+ <hr>
+ <br>
+
+ <h3 style = "color: rgb(3, 35, 48)">4. Escribe los numeros del 0 al 10</h3>
+
+ <h4 style = "color : rgb(101, 167, 3)">Estos son los numeros :{{tablas}} </h4>
+ <article>
+ {% for i in tabla %}
+  <div class="row">
+  <li>{{ i }}</li> <br>
+  </div>
+ {% endfor %}
+    
+ <hr>
+ <br>
+ <br>
+ <h3 style = "color: rgb(3, 35, 48)">5. Escribe los numeros pares menores que 100</h3>
+
+ <h4 style = "color : rgb(101, 167, 3)">Estos son los numeros : </h4>
+ <article>
+ {% for i in par %}
+  <div class="row"><th>
+  <li>{{ i }}</li>
+  </th> 
+  </div>
+ {% endfor %}
+ 
+ <br>
+ <h2><u>B.EJERCICIOS DEL BUCLE WHILE</u></h2>
+ <h3 style = "color: rgb(3, 35, 48)">1. Promedio de los 20 primeros numeros</h3>
+
+ 
+ <h4 style = "color : rgb(101, 167, 3)">Respuesta :<h4 style = "color: rgb(3, 35, 48)">{{prom}}</h4> </h4>
+
+ <hr>
+ <br>
+
+ <h3 style = "color: rgb(3, 35, 48)">2. El factorial del numero 10</h3>
+
+ 
+ <h4 style = "color : rgb(101, 167, 3)">Respuesta : <h4 style = "color: rgb(3, 35, 48)">{{fac1}}</h4> </h4>
+ <hr>
+ <br>
+
+ <h3 style = "color: rgb(3, 35, 48)">3. La inversa del numero 185 :</h3>
+
+ 
+ <h4 style = "color : rgb(101, 167, 3)">Respuesta : <h4 style = "color: rgb(3, 35, 48)">{{inv}}</h4> </h4>
+ <hr>
+ <br>
+
+ <h3 style = "color: rgb(3, 35, 48)">4. La suma de 20 primeros numeros :</h3>
+ <h4 style = "color : rgb(101, 167, 3)">Respuesta :<h4 style = "color: rgb(3, 35, 48)">{{adicion}}</h4> </h4>
+ <hr>
+ <br>
+
+ <h3 style = "color: rgb(3, 35, 48)">5. Contar los numeros de 10 al 0 :</h3>
+ <h4 style = "color : rgb(101, 167, 3)">Respuesta : </h4>
+ <article>
+ {% for i in retro %}
+    <div class="row"><th>
+    <li>{{ i }}</li>
+    </th> 
+    </div>
+ {% endfor %}
+   
+    <br>
+ <h2><u>C.EJERCICIOS DEL BUCLE DO-WHILE</u></h2>
+ <h3 style = "color: rgb(3, 35, 48)">1. Contar los numeros del 1 al 10 :</h3>
+ <h4 style = "color : rgb(101, 167, 3)">Respuesta : </h4>
+ <article>
+ {% for i in do1 %}
+    <div class="row"><th>
+    <li>{{ i }}</li>
+    </th> 
+    </div>
+ {% endfor %}
+    <hr>
+    <br>
+ <h3 style = "color: rgb(3, 35, 48)">2. Mostrar los numeros pares hasta el 20 :</h3>
+
+ <h4 style = "color : rgb(101, 167, 3)">Respuesta : </h4>
+ <article>
+ {% for i in do2 %}
+    <div class="row"><th>
+    <li>{{ i }}</li>
+    </th> 
+    </div>
+ {% endfor %}
+    <hr>
+    <br>
+ <h3 style = "color: rgb(3, 35, 48)">3. Mostrar los numeros del 20 al 0 :</h3>
+
+ <h4 style = "color : rgb(101, 167, 3)">Respuesta : </h4>
+ <article>
+  {% for i in do3 %}
+    <div class="row"><th>
+    <li>{{ i }}</li>
+    </th> 
+    </div>
+    {% endfor %}
+    <hr>
+    <br>
+ <h3 style = "color: rgb(3, 35, 48)">4. Dar una lista de numeros que me toco antes de que me toque el numero 4 :</h3>
+ 
+ <h4 style = "color : rgb(101, 167, 3)">Respuesta : </h4>
+ <article>
+ {% for i in do4 %}
+    <div class="row"><th>
+    <li>{{ i }}</li>
+    </th> 
+    </div>
+ {% endfor %}
+    <hr>
+    <br>
+ <h3 style = "color: rgb(3, 35, 48)">5. El promedio de los 20 primeros numeros :</h3>
+
+ <h4 style = "color : rgb(101, 167, 3)">Respuesta :<h4 style = "color: rgb(3, 35, 48)">{{do5}}</h4> </h4>
+ <hr>
+<br>
+</body>
+
+
+
